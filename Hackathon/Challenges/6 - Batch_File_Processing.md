@@ -83,4 +83,4 @@ JSON documents generated.
 
 ## Progress Diagram
 
-![Process distributor order batch files progress diagram](images/order-batch-files-progress-diagram.jpg)
+![Process distributor order batch files progress diagram](/images/order-batch-files-progress-diagram.jpg)
