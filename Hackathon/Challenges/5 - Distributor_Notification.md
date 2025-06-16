@@ -105,4 +105,4 @@ The email should also contain your team number in the subject. Feel free to also
 
 ## Progress Diagram
 
-![Distributor notification progress diagram](images/distributor-notification-progress-diagram.jpg)
+![Distributor notification progress diagram](/images/distributor-notification-progress-diagram.jpg)
