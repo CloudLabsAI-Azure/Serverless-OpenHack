@@ -157,4 +157,4 @@ Use tools like Curl and Postman or Postman to validate your API.
 
 ## Progress Diagram
 
-![Ratings API progress diagram](images/ratings-api-progress-diagram.jpg)
+![Ratings API progress diagram](/images/ratings-api-progress-diagram.jpg)
