@@ -2,7 +2,7 @@
 
 ## Process Diagram
 
-![Pub/Sub and VNet Integration Progress Diagram](images/pubsub-and-vnet-integration-progress-diagram.jpg)
+![Pub/Sub and VNet Integration Progress Diagram](/images/pubsub-and-vnet-integration-progress-diagram.jpg)
 
 ## Overview
 
