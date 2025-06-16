@@ -46,4 +46,4 @@ automated system
 
 ## Progress Diagram
 
-![Alerting and notification progress diagram](imagess/alerting-and-notification-progress-diagram.jpg)
+![Alerting and notification progress diagram](/images/alerting-and-notification-progress-diagram.jpg)
