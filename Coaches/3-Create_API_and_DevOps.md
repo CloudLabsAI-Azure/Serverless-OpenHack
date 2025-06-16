@@ -2,7 +2,7 @@
 
 ## Progress Diagram
 
-![Ratings API progress diagram](images/ratings-api-progress-diagram.jpg)
+![Ratings API progress diagram](/images/ratings-api-progress-diagram.jpg)
 
 ## Happy Path
 
