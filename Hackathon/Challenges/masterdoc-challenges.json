@@ -1,0 +1,53 @@
+[ 
+  {
+  "Name": "Serverless OpenHack",
+  "Language": "English",
+  "BaseURL": "https://github.com/CloudLabsAI-Azure/Serverless-OpenHack",
+  "Files": [
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/0-Home.md",
+        "Order": 1
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/0%20-%20Environment_Configuration.md",
+        "Order": 2
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/1%20-%20First_Function_and_Logic_App.md",
+        "Order": 3
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/2%20-%20Alerting_and_Notification.md",
+        "Order": 4
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/3%20-%20Create_API_and_DevOps.md",
+        "Order": 5
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/4%20-%20Telemetry_and_API_Management.md",
+        "Order": 6
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/5%20-%20Distributor_Notification.md",
+        "Order": 7
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/6%20-%20Batch_File_Processing.md",
+        "Order": 8
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/7%20-%20Sales_Events_with_Event_Hubs.md",
+        "Order": 9
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/8%20-%20PubSub_and_Network_Integration.md",
+        "Order": 10
+     },
+     {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Hackathon/Challenges/9%20-%20Data_Aggregation_and_Reporting.md",
+        "Order": 11
+     },
+   ]
+ }
+]
