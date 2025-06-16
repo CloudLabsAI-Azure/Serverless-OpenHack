@@ -2,7 +2,7 @@
 
 ## Progress Diagram
 
-![System telemetry and API Management progress diagram](images/system-telemetry-and-api-management-progress-diagram.jpg)
+![System telemetry and API Management progress diagram](/images/system-telemetry-and-api-management-progress-diagram.jpg)
 
 ## Happy Path
 
