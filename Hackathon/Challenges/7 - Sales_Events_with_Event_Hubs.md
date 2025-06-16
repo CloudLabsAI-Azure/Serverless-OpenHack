@@ -137,4 +137,4 @@ Functions scaled up to
 
 ## Progress Diagram
 
-![Process POS sales event progress diagram](images/process-pos-sales-event-progress-diagram.jpg)
+![Process POS sales event progress diagram](/images/process-pos-sales-event-progress-diagram.jpg)
