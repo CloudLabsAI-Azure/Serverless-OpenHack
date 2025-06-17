@@ -88,4 +88,4 @@ The mobile applications users shouldn't have any throttling configured on the op
 
 ## Progress Diagram
 
-![System telemetry and API Management progress diagram](/images/system-telemetry-and-api-management-progress-diagram.jpg)
+![System telemetry and API Management progress diagram](../../images/system-telemetry-and-api-management-progress-diagram.jpg)
