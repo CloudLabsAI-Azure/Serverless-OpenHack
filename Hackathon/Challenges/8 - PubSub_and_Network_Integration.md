@@ -93,4 +93,4 @@ When determining how to perform the filtering of messages, it is important to re
 
 ## Progress Diagram
 
-![Pub/Sub and VNet Integration Progress Diagram](/images/pubsub-and-vnet-integration-progress-diagram.jpg)
+![Pub/Sub and VNet Integration Progress Diagram](../../images/pubsub-and-vnet-integration-progress-diagram.jpg)
