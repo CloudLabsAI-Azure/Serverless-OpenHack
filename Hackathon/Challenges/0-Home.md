@@ -6,7 +6,7 @@ These services work in combination with other Azure services and form the core o
 
 ## Best For You Organics Company
 
-<img style="float: right;" height="160" src="/images/company-logo.png" />
+![](../../images/company-logo.png)
 
 **Best For You Organics Company (BFYOC)** is an ice cream company with over 200 stores worldwide. BFYOC has focused on fresh ingredients, locally sourced, and seasonal. Their 26 flavors range from the ordinary vanilla, to the ever popular avocado toast (which is a much better flavor than it sounds). They are now creating a new line of fruit flavored ice creams and are preparing to launch onto the market.
 
