@@ -2,7 +2,7 @@
 
 ## Progress Diagram
 
-![Distributor notification progress diagram](/images/distributor-notification-progress-diagram.jpg)
+![Distributor notification progress diagram](../images/distributor-notification-progress-diagram.jpg)
 
 ## Happy Path
 
