@@ -13,39 +13,39 @@
         "Order": 2
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/2-Alerting_and_Notification.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/2-Alerting_and_Notification.md",
         "Order": 3
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/3-Create_API_and_DevOps.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/3-Create_API_and_DevOps.md",
         "Order": 4
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/4-Telemetry_and_API_Management.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/4-Telemetry_and_API_Management.md",
         "Order": 5
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/5-Distributor_Notification.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/5-Distributor_Notification.md",
         "Order": 6
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/6-Batch_File_Processing.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/6-Batch_File_Processing.md",
         "Order": 7
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/7-Sales_Events_with_Event_Hubs.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/7-Sales_Events_with_Event_Hubs.md",
         "Order": 8
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/8-PubSub_and_Network_Integration.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/8-PubSub_and_Network_Integration.md",
         "Order": 9
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/9-Data_Aggregation_and_Reporting.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/9-Data_Aggregation_and_Reporting.md",
         "Order": 10
      },
      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/https://raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/10-High_Availability.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Serverless-OpenHack/refs/heads/main/Coaches/10-High_Availability.md",
         "Order": 11
      }
    ]
