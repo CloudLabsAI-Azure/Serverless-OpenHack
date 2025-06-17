@@ -42,4 +42,4 @@ info as per the Challenge section.
 
 ## Progress Diagram
 
-![Final progress diagram](/images/final-progress-diagram.jpg)
+![Final progress diagram](../../images/final-progress-diagram.jpg)
