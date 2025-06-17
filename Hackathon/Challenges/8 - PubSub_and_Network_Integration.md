@@ -8,7 +8,7 @@ After learning of the executive's high-level requirements, the cloud architectur
 
 BFYOC has an existing virtual network containing at least two subnets.  They also have an Azure storage account configured to use Azure Virtual Network service endpoints to restrict access from any source except the two subnets within the virtual network.  An Azure Virtual Machine is available to be used as a jumpbox for viewing data from services within the virtual network.
 
-![Virtual Network with subnets and blob storage service endpoints](images/pubsub-and-vnet-integration-virtual-network-diagram.png)
+![Virtual Network with subnets and blob storage service endpoints](../../images/pubsub-and-vnet-integration-virtual-network-diagram.png)
 
 ## Challenge
 
