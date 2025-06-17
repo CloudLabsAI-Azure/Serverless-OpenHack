@@ -2,7 +2,7 @@
 
 ## Progress Diagram
 
-![Process POS sales event progress diagram](/images/process-pos-sales-event-progress-diagram.jpg)
+![Process POS sales event progress diagram](../images/process-pos-sales-event-progress-diagram.jpg)
 
 ## Happy Path
 
