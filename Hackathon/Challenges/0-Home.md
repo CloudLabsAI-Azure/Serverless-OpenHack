@@ -1,4 +1,4 @@
-# Serverless OpenHack
+# Microsoft Azure Serverless OpenHack
 
 Serverless computing allows for scalable and reliable event based processing for code and workflows. It accelerates the development of applications while hiding the infrastructure and providing auto-scale and micro-billing. Serverless technologies like Azure Functions, Logic Apps, and Event Grid are some of the services being adopted by development teams in startups, ISVs, and enterprises to implement new or extend existing solutions. Companies that adopt serverless benefit from a fast time to market and only pay for what they use.
 
