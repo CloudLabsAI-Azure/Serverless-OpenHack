@@ -24,7 +24,7 @@ Welcome to your Microsoft Azure Serverless OpenHack Hackathon! We have prepared 
  
 Once you are ready to dive in, your virtual machine and hackathon guide will be right at your fingertips within your web browser.
 
-![](../../images/openhack-labguide.png)
+![](../../images/serverless-lab-guide.png)
 
 ### Virtual Machine & Hackathon Guide
  
@@ -34,19 +34,19 @@ Your virtual machine is your workhorse throughout the workshop. The hackathon gu
  
 To get a better understanding of your hackathon resources and credentials, navigate to the **Environment** tab.
  
-![](../../images/env-01.png)
+![](../../images/serverless-environment.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the hackathon guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![](../../images/split-01.png)
+![](../../images/serverless-split-window.png)
  
 ## Managing your Virtual Machine
  
 Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](../../images/resourses.png)
+![](../../images/serverless-resources.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
@@ -104,6 +104,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](../../images/lab-next.png)
+![](../../images/serverless-lab-next.png)
 
 ### Happy Hacking!!
