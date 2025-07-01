@@ -24,7 +24,7 @@ Welcome to your Microsoft Azure Serverless OpenHack Hackathon! We have prepared 
  
 Once you are ready to dive in, your virtual machine and hackathon guide will be right at your fingertips within your web browser.
 
-![](images/openhack-labguide.png)
+![](../../images/openhack-labguide.png)
 
 ### Virtual Machine & Hackathon Guide
  
@@ -34,43 +34,43 @@ Your virtual machine is your workhorse throughout the workshop. The hackathon gu
  
 To get a better understanding of your hackathon resources and credentials, navigate to the **Environment** tab.
  
-![](images/env-01.png)
+![](../../images/env-01.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the hackathon guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![](images/split-01.png)
+![](../../images/split-01.png)
  
 ## Managing your Virtual Machine
  
 Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](images/resourses.png)
+![](../../images/resourses.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](images/zoom-feature.png)
+![](../../images/zoom-feature.png)
 
 ## Let's get started with the Azure Portal
 
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
-   ![](images/azure-portal-edge.png)
+   ![](../../images/azure-portal-edge.png)
 
 1. On the **Sign in to continue to Microsoft Azure** tab, you will see the login screen. In that, enter the following email/username and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-     ![](images/user-email.png "Enter Email")
+     ![](../../images/user-email.png "Enter Email")
      
 1. Now, enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-     ![](images/user-pass.png "Enter Password")
+     ![](../../images/user-pass.png "Enter Password")
 
 1. At the **"More information required"** prompt, select **Next**.
   
@@ -104,6 +104,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](images/lab-next.png)
+![](../../images/lab-next.png)
 
 ### Happy Hacking!!
