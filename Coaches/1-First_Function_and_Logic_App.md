@@ -90,11 +90,11 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    func start
    ```
 
-   ![](../images/localhost.png)
+   ![](../images/fucn-start.png)
 
 1. Navigate to the HTTP trigger function via localhost.
 
-   ![](../images/fucn-start.png)
+   ![](../images/localhost.png)
 
 ## Step 2: Deploy Function to Azure
 
