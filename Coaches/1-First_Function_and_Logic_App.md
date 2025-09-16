@@ -50,3 +50,104 @@ CsvHelper | 12.1.2
 Microsoft.Azure.WebJobs.Extension.CosmosDB | 3.0.3
 Microsoft.Azure.WebJobs.Extensions.DurableTask | 1.8.2
 Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
+
+## Step 1: Create and Debug Your First HTTP Triggered Azure Function Locally
+
+1. Navigate to **Visual Studio Code** in your Lab-VM.
+
+1. In your Visual Studio Code, navigate to **Extensions** and install **Azure Functions** and **Azure CLI** extensions.
+
+1. Once the extensions are installed, navigate to **Azure Functions** extension and click on **Create Function Project** under **Workspace (Local)**.
+
+1. While creating the new project, choose the settings based on your preferred language.
+
+   - Select a Language (Python, JavaScript, etc)
+   - Select the version
+   - Select **HTTP Trigger**
+   - Enter the function name
+   - Choose **Anonymous** as the authorization level
+   - Open in Current/New window
+  
+1. Your new project will be ready to use locally.
+
+1. In the new VS Code terminal, run the below command to install the **Azure Function Core Tools** extension. Enter **Y** in the terminal to authorize the installation. This might a few minutes to complete the installation process. 
+
+   ```
+   winget install Microsoft.Azure.FunctionsCoreTools
+   ```
+
+1. Once installed, make sure that you are in the core directory, re-open the VS Code if needed and run the below command to run the function locally.
+
+   ```
+   func start
+   ```
+
+1. Navigate to the HTTP trigger function via localhost. 
+
+## Step 2: Deploy Function to Azure
+
+1. In your Visual Studio Code, navigate to **Azure Functions** extension and **Sign in to Azure**.
+
+1. Click on **Allow** to authorize VS Code.
+
+1. Enter the Azure username and password provided in the **Environment** tab of your lab.
+
+1. Once signed-in, click on **Deploy to Azure** under **Azure Functions** extension.
+
+1. While deploying to Azure, select the following settings:
+
+   - Create a new function app
+   - Enter a unique name for your function app
+   - Select the location
+   - Select the runtime stack
+   - Select Secrets as authentication type
+  
+1. On the VS Code pop-up, click on **Deploy** to deploy the function app to Azure.
+
+1. Once the function app is deployed to Azure, navigate to Azure portal and access the **Default domain** of the function app.
+
+1. Enter the same suffix (example: /api/http-trigger) used while deploying the function app via localhost.
+
+## Step 3: Create and Configure Logic App
+
+1. On the Azure portal, search for **Logic Apps** and click on **+ Add**.
+
+1. On the **Create Logic App** page, select the desired hosting option and click on **Select**.
+
+   - Use the same resource group where the newly created function app resides
+   - Provide a unique name for your function app
+   - Use the default region
+   - Click on **Review + Create** and then **Create**
+
+1. Once the Logic App is created successfully, click on **Go to resource**.
+
+1. On the **Logic App** resource, navigate to **Workflows** and **+ Add** a worflow.
+
+1. Your workflow should have three elements:
+
+   - When an HTTP request is received
+   - Call an Azure function
+   - Response
+  
+1. In the **When an HTTP request is received** trigger, use the sample payload for the parameters.
+
+   ```
+   {
+     "productId": "75542e38-563f-436f-adeb-f426f1dabb5c"
+   }
+   ```
+
+1. In the **Call an Azure function** trigger, select **GET** method and leave the other values as default.
+
+1. In the **Response** trigger, configure the following values:
+
+   -  Status Code - **200**
+   -  Headers - **product_id > http_trigger**
+   -  Body - Enter the same response from the Azure function app API trigger
+  
+1. **Save** the workflow and click on **Run**.
+
+1. Once the workflow has run successfully, navigate to the **When an HTTP request is received** trigger and copy the HTTP URL.
+
+1. Paste the HTTP URL in a new browser tab to fetch the logic app's response.
+   
