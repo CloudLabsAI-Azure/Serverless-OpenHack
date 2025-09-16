@@ -57,11 +57,11 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
 
 1. In your Visual Studio Code, navigate to **Extensions** and install **Azure Functions** and **Azure CLI** extensions.
 
-   ![](../../images/azure-func-ext.png)
+   ![](../images/azure-func-ext.png)
 
 1. Once the extensions are installed, navigate to **Azure Functions** extension and click on **Create Function Project** under **Workspace (Local)**.
 
-   ![](../../images/func-local.png)
+   ![](../images/func-local.png)
 
 1. While creating the new project, choose the settings based on your preferred language.
 
@@ -74,7 +74,7 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
   
 1. Your new project will be ready to use locally.
 
-   ![](../../images/new-proj.png)
+   ![](../images/new-proj.png)
 
 1. In the new VS Code terminal, run the below command to install the **Azure Function Core Tools** extension. Enter **Y** in the terminal to authorize the installation. This might a few minutes to complete the installation process. 
 
@@ -82,7 +82,7 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    winget install Microsoft.Azure.FunctionsCoreTools
    ```
 
-   ![](../../images/azure-func-core-tools.png)
+   ![](../images/azure-func-core-tools.png)
 
 1. Once installed, make sure that you are in the core directory, re-open the VS Code if needed and run the below command to run the function locally.
 
@@ -90,17 +90,17 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    func start
    ```
 
-   ![](../../images/localhost.png)
+   ![](../images/localhost.png)
 
 1. Navigate to the HTTP trigger function via localhost.
 
-   ![](../../images/fucn-start.png)
+   ![](../images/fucn-start.png)
 
 ## Step 2: Deploy Function to Azure
 
 1. In your Visual Studio Code, navigate to **Azure Functions** extension and **Sign in to Azure**.
 
-   ![](../../images/sign-in-azure.png)
+   ![](../images/sign-in-azure.png)
 
 1. Click on **Allow** to authorize VS Code.
 
@@ -108,7 +108,7 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
 
 1. Once signed-in, click on **Deploy to Azure** under **Azure Functions** extension.
 
-   ![](../../images/deploy-to-azure.png)
+   ![](../images/deploy-to-azure.png)
 
 1. While deploying to Azure, select the following settings:
 
@@ -120,17 +120,17 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
   
 1. On the VS Code pop-up, click on **Deploy** to deploy the function app to Azure.
 
-   ![](../../images/deploy-to-azure-allow.png)
+   ![](../images/deploy-to-azure-allow.png)
 
 1. Once the function app is deployed to Azure, navigate to Azure portal and access the **Default domain** of the function app.
 
-   ![](../../images/azure-rg-01.png)
+   ![](../images/azure-rg-01.png)
 
-   ![](../../images/func-default-domain.png)
+   ![](../images/func-default-domain.png)
 
 1. Enter the same suffix (example: /api/http-trigger) used while deploying the function app via localhost. 
 
-   ![](../../images/ch-01-http-trigger.png)
+   ![](../images/ch-01-http-trigger.png)
 
 ## Step 3: Configure and Test the Logic App
 
@@ -143,13 +143,13 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    - Use the default region
    - Click on **Review + Create** and then **Create**
   
-   ![](../../images/logic-app-plan.png)
+   ![](../images/logic-app-plan.png)
 
 1. Once the Logic App is created successfully, click on **Go to resource**.
 
 1. On the **Logic App** resource, navigate to **Workflows** and **+ Add** a worflow.
 
-   ![](../../images/add-logic-app.png)
+   ![](../images/add-logic-app.png)
 
 1. Your workflow should have three elements:
 
@@ -157,7 +157,7 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    - Call an Azure function
    - Response
   
-   ![](../../images/logic-app-elements.png)
+   ![](../images/logic-app-elements.png)
   
 1. In the **When an HTTP request is received** trigger, use the **sample payload** for the parameters.
 
@@ -175,15 +175,15 @@ Microsoft.Azure.WebJobs.Extensions.EventHubs | 3.0.3
    -  Headers - **product_id > http_trigger**
    -  Body - Enter the same response from the Azure function app API trigger 
   
-   ![](../../images/response-trigger.png)
+   ![](../images/response-trigger.png)
   
 1. **Save** the workflow and click on **Run**.
 
 1. Once the workflow has run successfully, navigate to the **When an HTTP request is received** trigger and copy the HTTP URL.
 
-   ![](../../images/http-trigger-url.png)
+   ![](../images/http-trigger-url.png)
 
 1. Paste the HTTP URL in a new browser tab to fetch the logic app's response.
 
-   ![](../../images/access-http-trigger-url.png)
+   ![](../images/access-http-trigger-url.png)
    
