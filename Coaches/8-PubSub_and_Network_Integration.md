@@ -49,3 +49,98 @@ The primary objective of this challenge is to expose participants to the followi
 The diagram below depicts the Azure resources which are created for each team's Azure subscription.
 
 ![Azure resources](https://ohreleases.blob.core.windows.net/openhack-assets/serverlessimages/pubsub-and-network-challenge-existing-azure-resources.png)
+
+## Challenge Steps:
+
+### Step 1: Create Azure resources
+
+1. Navigate to Azure portal, search for **Virtual Network** and create a new virtual network.
+
+1. Use the resource group **serverless-openhack** and create two subnets **receipt-processing** and **jumpbox**.
+
+1. Configure the service endpoints for `Microsoft.Storage` on both the subnets.
+
+1. On the Azure portal, create a Service Bus Namespace:
+
+   - Tier: Standard
+   - Region: same as VNet and Function App
+
+1. Create a Topic inside the service bus with the an unique name (sales-receipts).
+
+### Step 2: Modify Azure Function to Publish Messages
+
+1. For the Event Hub Trigger, use your existing function from the previous challenge to receive POS events.
+
+1. Check for Receipt and proceed if `receiptUrl` exists in the POS message.
+
+1. Construct the JSON message:
+   
+   ```
+   {
+       "totalItems": 8,
+       "totalCost": 123.40,
+       "salesNumber": "0c423398-3c7c-0682-7519-4701c445ed7a",
+       "salesDate": "09/11/2019 06:04:43",
+       "storeLocation": "00d8ea6f-935c-2cca-9bbc-f56b5a091621",
+       "receiptUrl": "https://serverlessohsales.blob.core.windows.net/TheReceipt.pdf"
+   }
+   ```
+
+1. Add Service Bus Output Binding
+
+   - C# example in function.json:
+     ```
+     {
+       "type": "serviceBus",
+       "direction": "out",
+       "name": "outputMessage",
+       "topicName": "sales-receipts",
+       "connection": "ServiceBusConnectionString"
+     }
+     ```
+
+
+1. Set User Property for Filtering to include TotalCost as a user property in the Service Bus message.
+
+### Step 3: Create Subscriber Functions
+
+1. High-Value Receipts Function
+
+   - Service Bus Trigger - high-value-receipts subscription
+   - Download PDF from receiptUrl (SAS URL)
+   - Base64 encode the PDF
+   - Construct JSON including ReceiptImage
+   - Save JSON to receipts-high-value container with random GUID as filename
+
+1. All Receipts Function
+
+   - Service Bus Trigger - all-receipts subscription
+   - Construct JSON without base64 encoding
+   - Save to receipts container with random GUID as filename
+
+1. Blob Output Binding
+
+   - Use binding expression to generate random GUID filenames:
+     ```
+     "path": "receipts-high-value/{rand-guid}.json"
+     ```
+
+### Step 4: Integrate Function App with VNet and Test
+
+1. Enable VNet Integration inside the Function App, **Networking > VNet Integration** and select receipt-processing subnet.
+
+1. Test Storage access under Functions, which should be able to write to sohsales containers via service endpoints.
+
+1. Send Test Events inside the Event Hub and inject POS events with varying totalCost and receiptUrl.
+
+1. Check Service Bus Routing to ensure messages are correctly routed by filters:
+
+   - high-value-receipts: messages ≥ $100
+   - all-receipts: all messages
+
+1. Verify Blob Storage by navigating to the **Storage Explorer** of your Storage acount.
+
+1. Check JSON files in:
+
+   - receipts-high-value - contains base64 encoded PDFs
+   - receipts - contains standard JSON messages
