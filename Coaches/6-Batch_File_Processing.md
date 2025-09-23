@@ -42,3 +42,111 @@ One of the following options:
 * When writing to CosmosDB in Logic Apps the Partition Key parameter needs to be added as a new parameter to the CosmosDB Create or Update document connector. The value needs to be surrounded by quotes.  The partition also needs to be sent as part of the body of the document to create.  If you don't see your partition key's value in both the document and the Partition Key Value parameter, the create or update document will not work.   Additionally, you can review the designer JSON and validate that the "x-ms-documentdb-raw-partitionkey" is set with a value.  
 
 * If you get an error for Microsoft.EventGrid resource provider was not registered for the attendee subscription, make sure to follow the steps to register the EventGrid resource provider from [Enable Event Grid Resource Provider](https://docs.microsoft.com/en-us/azure/event-grid/custom-event-quickstart-portal)  
+
+## Challenge Steps:
+
+### Step 1: Create Azure Storage Account & Container
+
+1. Navigate to Azure poratl and create a Storage Account with the following settings:
+
+   - Resource group: serverless-openhack
+   - Storage account name: Provide a unique name.
+   - Region: Choose desired region.
+   - Performance: Standard.
+   - Account kind: StorageV2 (General Purpose v2).
+   - Replication: LRS (locally redundant).
+   - Click on **Review + Create > Create**.
+
+1. Now let's create a Blob Container, navigate to your storage account **Containers** and then add **+Container**.
+
+   - Provide a unique name (for example - orders)
+   - Access level: Private.
+
+1. Get Storage Connection String from **Storage Account > Access Keys > Connection String**
+
+1. Copy and save the connection string for API registration.
+
+### Step 2: Register Event Grid
+
+1. Go to your **Subscriptions > Resource Providers**.
+
+1. Search for **Microsoft.EventGrid** and click on **Register**.
+
+1. This allows Blob events to trigger serverless workflows.
+
+### Step 3: Register Storage Account with OpenHack API
+
+1. Identify your teamTableNumber:
+
+   - If assigned, use it.
+   - Else, create a unique name like <city>-table-<number>.
+
+1. Prepare HTTP POST request:
+
+   - Endpoint: /team/registerStorageAccount
+   - Body example:
+     ```
+     {
+        "teamTableNumber": "bangalore-table-01",
+        "storageAccountConnectionString": "<your-connection-string>",
+        "blobContainerName": "orders"
+     }
+     ```
+   - Send via: Postman or Azure Functions HTTP client
+
+1. Save your teamTableNumber for later challenges.
+
+### Step 4: Setup Batch Processing Workflow
+
+You need a workflow that waits for all 3 files of a batch before processing.
+
+1. Navigate to your function app and **Durable functions** from the left navigate pane.
+
+   - Function type: Orchestrator.
+   - Trigger type: Event Grid Trigger (Blob created events).
+
+1. Below is the Workflow Logic provided:
+
+   - When a blob is uploaded:
+   - Parse file name prefix (e.g., 20180518151300).
+   - Store in batch tracking table (Azure Table / Cosmos DB) which files have arrived.
+   - Check if all 3 file types exist for that batch:
+     - OrderHeaderDetails.csv
+     - OrderLineItems.csv
+     - ProductInformation.csv
+
+1. If batch is complete:
+
+   - Read content of all 3 blobs.
+   - Call /order/combineOrderContent with JSON body:
+     ```
+     {
+        "orderHeader": "<OrderHeaderDetails content>",
+        "orderLineItems": "<OrderLineItems content>",
+        "productInformation": "<ProductInformation content>"
+     }
+     ```
+
+1. Receive combined JSON orders.
+
+1. Insert each order JSON as a separate document into Cosmos DB or another database.
+
+### Step 5: Insert JSON into Database and test the workflow
+
+1. Create a database in your Cosmos DB for Core service and name the container.
+
+1. Insert each order JSON as a document.
+
+1. Upload 3 files in your blob container with the same batch prefix:
+
+   - 20180518151300-OrderHeaderDetails.csv
+   - 20180518151300-OrderLineItems.csv
+   - 20180518151300-ProductInformation.csv
+
+1. Check if the:
+
+   - Workflow triggers automatically Durable Function.
+   - Files are combined via /order/combineOrderContent.
+   - JSON documents appear in your database.
+
+1. Verify JSON structure includes all data from the 3 CSVs.
