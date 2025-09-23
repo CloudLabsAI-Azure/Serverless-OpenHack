@@ -61,9 +61,9 @@ You can access the list of products via the `GetProducts` method in the existing
 
 You can retrieve the main contacts of the distributors from the distributor's Dynamics 365 CRM systems with the following detail:
 
-* User: `duser@microsoftopenhack.onmicrosoft.com`
+* User: `OHUser@azurehol5164.onmicrosoft.com`
 
-* Password: `pass@word1`
+* Password: `Passw@rd@123`
 
 * Environment: `Microsoft OpenHack (msftopenhack)`
 
