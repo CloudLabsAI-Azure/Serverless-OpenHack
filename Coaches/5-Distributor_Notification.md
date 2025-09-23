@@ -80,6 +80,7 @@ One of these options
 
    - Name: EmailBody
    - Value:
+     
      ```
      <tr>
         <td>@{items('For_Each')?['ProductName']}</td>
