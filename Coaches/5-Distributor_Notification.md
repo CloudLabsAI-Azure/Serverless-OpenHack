@@ -14,7 +14,9 @@ One of these options
 
 ## Coaches Notes
 
-* The CRM Contacts have their email addresses set to two email addresses that you can use to validate the emails were sent. To validate, login with the following accounts OHCoach1@microsoftopenhack.onmicrosoft.com Pass: OpenHackCoach1, User: OHCoach2@microsoftopenhack.onmicrosoft.com, Pass: OpenHackCoach2 at [Office.com](https://outlook.office.com).
+* The CRM Contacts have their email addresses set to two email addresses that you can use to validate the emails were sent. To validate, login with the following accounts at [Office.com](https://outlook.office.com).
+  - OHCoach1@azurehol5164.onmicrosoft.com, Pass: OpenHackCoach1
+  - OHCoach2@azurehol5164.onmicrosoft.com, Pass: OpenHackCoach2 
 
 * Remember to "Add a new Connection" in Logic Apps when signing in to the Microsoft Dataverse connector connector and enter the credentials as per the challenge.  When entered correctly, the list of options will present.  Select `List Records` then build the logic app around that list with foreach control.
 
